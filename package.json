@@ -1,0 +1,38 @@
+{
+  "name": "rss-reader",
+  "version": "1.0.0",
+  "description": "Build a customizable content aggregator that pulls RSS and Atom feeds into a single, well-designed reading dashboard. Your personalized front page for tech content.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kemalstudio/rss-reader.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Kemalstudio/rss-reader/issues"
+  },
+  "homepage": "https://github.com/Kemalstudio/rss-reader#readme",
+  "dependencies": {
+    "next": "^15.5.15",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.4",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^25.6.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "^16.2.4",
+    "postcss": "^8.5.13",
+    "tailwindcss": "^4.2.4",
+    "typescript": "^6.0.3"
+  }
+}
