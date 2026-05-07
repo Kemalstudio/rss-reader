@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: rgb(var(--color-primary));
+  --color-secondary: rgb(var(--color-secondary));
+  --color-success: rgb(var(--color-success));
+  --color-warning: rgb(var(--color-warning));
+  --color-error: rgb(var(--color-error));
+  --color-text-primary: rgb(var(--color-text-primary));
+  --color-text-secondary: rgb(var(--color-text-secondary));
+  --color-bg-primary: rgb(var(--color-bg-primary));
+  --color-bg-secondary: rgb(var(--color-bg-secondary));
+  --color-border: rgb(var(--color-border));
+}
+
+@layer base {
+  :root {
+    --color-primary: 43 121 255;
+    --color-secondary: 43 121 255;
+    --color-success: 34 197 94;
+    --color-warning: 245 158 11;
+    --color-error: 239 68 68;
+    --color-text-primary: 30 36 48;
+    --color-text-secondary: 100 116 139;
+    --color-bg-primary: 255 255 255;
+    --color-bg-secondary: 245 248 252;
+    --color-border: 228 235 245;
+  }
+
+  :root[data-theme='light'] {
+    --color-text-primary: 30 36 48;
+    --color-text-secondary: 100 116 139;
+    --color-bg-primary: 255 255 255;
+    --color-bg-secondary: 245 248 252;
+    --color-border: 228 235 245;
+  }
+
+  :root[data-theme='dark'] {
+    --color-text-primary: 239 245 255;
+    --color-text-secondary: 171 187 210;
+    --color-bg-primary: 16 23 36;
+    --color-bg-secondary: 20 29 44;
+    --color-border: 44 57 78;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme='light']) {
+      --color-text-primary: 239 245 255;
+      --color-text-secondary: 171 187 210;
+      --color-bg-primary: 16 23 36;
+      --color-bg-secondary: 20 29 44;
+      --color-border: 44 57 78;
+    }
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-bg-secondary text-text-primary antialiased transition-colors;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+
+  a {
+    @apply transition-colors;
+  }
+}
