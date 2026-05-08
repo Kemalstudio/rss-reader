@@ -78,7 +78,8 @@ Organize feeds into user-defined categories.
 
 ---
 
-## 5. Read/Unread Tracking
+## 5. Read/Unread Tra
+cking
 
 Track which items the user has seen.
 
